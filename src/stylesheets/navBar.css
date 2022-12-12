@@ -1,4 +1,65 @@
 .logo {
-    width: 2.5em;
-    height: 2.5em;
+    cursor: pointer;
+    width: 2em;
+    height: 2em;
+    margin:  .2em 0 0 0;
+}
+.log-nav{
+    display: block;
+}
+
+.nav{
+  height: 48px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #545454;
+  z-index: 99999;
+  border-bottom: solid 2px red;
+}
+.nav-logo{
+  margin-left: 5px;
+}
+.nav-content{
+  margin-right: 5px;
+}
+
+.nav-items{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.nav-item{
+  cursor: pointer;
+}
+.nav-item:hover:after{
+  transform: scaleX(1); 
+  cursor: pointer;
+}
+.nav-item:after {
+  margin-top: 0.3em;
+  display:block;
+  content: '';
+  border-bottom: solid 3px red;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+
+.nav-item > .active  {
+  padding-bottom: 12px;
+  border-bottom: 3px solid red;
+}
+
+Button > .active  {
+  padding-bottom: 12px;
+  
+}
+.nav-item{
+  list-style-type: none;
+  display: inline-block;
+  padding: 13px;
 }
