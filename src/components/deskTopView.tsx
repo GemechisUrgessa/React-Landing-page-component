@@ -1,16 +1,35 @@
 import logo from '../assets/logo.svg';
 import { Link, animateScroll as scroll } from "react-scroll";
 import Typography from '@mui/material/Typography';
-import '../stylesheets/navBar.css';
-const NavBar = (): JSX.Element => {
+
+import { useEffect, useState } from 'react';
+const DesktopView = (): JSX.Element => {
+    const [bg, setBg] = useState(false);
+    useEffect(() => {
+        const changeBg = () => {
+            if (window.scrollY >= 300) {
+                console.log("scrollY: " + window.scrollY)
+                setBg(true);
+            }
+            else {
+                setBg(false);
+            }
+        }
+        window.addEventListener("scroll", changeBg);
+        return () => {
+            window.addEventListener("scroll", changeBg);
+        }
+    }, []
+    );
+
     return (
-        <>
-            <nav className="nav" id="navbar">
+        <header>
+            <nav className={bg ? 'nav nav-bg' : 'nav'} id="navbar">
                 <div className="nav-logo"><Typography
                     variant="h6"
                     noWrap
                     component="div"
-                ><Link className="logo-nav"
+                ><Link className="logo"
                     activeClass="active"
                     to="home"
                     spy={true}
@@ -18,7 +37,8 @@ const NavBar = (): JSX.Element => {
                     offset={-48}
                     duration={200}
                 >
-                        <img className="logo" src={logo} alt="logo" />
+                        {/* <img className="logo" src={logo} alt="logo" /> */}
+                        DEV-MAX
                     </Link>
 
                 </Typography></div>
@@ -75,8 +95,8 @@ const NavBar = (): JSX.Element => {
                     </Link></li>
                 </ul>
             </nav>
-        </>
+        </header>
     )
 }
 
-export default NavBar;
+export default DesktopView;

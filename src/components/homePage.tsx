@@ -1,58 +1,33 @@
-import NavBar from "./navBar";
+import NavBar from "./deskTopView";
 import '../stylesheets/homePage.css';
-import Particles from "react-tsparticles";
+import Particle from "./Particles";
+import Header from "./header";
+import Typewriter from "typewriter-effect";
 
 const HomePage = (): JSX.Element => {
 
     return (
-        <header>
-            {/* <NavBar /> */}
-            <Particles
-                params={{
-                    particles: {
-                        number: {
-                            value: 160,
-                            density: {
-                                enable: true,
-                                value_area: 1500
-                            }
-                        },
-                        line_linked: {
-                            enable: false,
-                            opacity: 0.03
-                        },
-                        move: {
-                            direction: "right",
-                            speed: 0.05
-                        },
-                        size: {
-                            value: 1
-                        },
-                        opacity: {
-                            anim: {
-                                enable: true,
-                                speed: 1,
-                                opacity_min: 0.05
-                            }
-                        }
-                    },
-                    interactivity: {
-                        events: {
-                            onclick: {
-                                enable: true,
-                                mode: "push"
-                            }
-                        },
-                        modes: {
-                            push: {
-                                particles_nb: 1
-                            }
-                        }
-                    },
-                    retina_detect: true
-                }}
-            />
-        </header>
+        <>
+            <div className="home" id="home">
+                <Particle />
+                <div className='home-container'>
+                    <h1>Hello, I'm <span className="name">Gemechis Urgessa.</span></h1>
+                    <Typewriter
+                        options={{
+                            strings: [
+                                "Web Developer",
+                                "Android/iOS Developer",
+                                "React Js Developer",
+                                "React Native Developer"
+                            ],
+                            autoStart: true,
+                            loop: true,
+                            deleteSpeed: 50
+                        }}
+                    />
+                </div></div>
+
+        </>
     )
 }
 

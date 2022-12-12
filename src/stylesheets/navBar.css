@@ -1,5 +1,6 @@
 .logo {
     cursor: pointer;
+  color: rgb(12, 208, 243);
     width: 2em;
     height: 2em;
     margin:  .2em 0 0 0;
@@ -7,7 +8,10 @@
 .log-nav{
     display: block;
 }
-
+.nav-bg{
+  background-color: #242424;
+  border-bottom: solid 2px red;
+}
 .nav{
   height: 48px;
   color: white;
@@ -17,9 +21,9 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #545454;
+  
   z-index: 99999;
-  border-bottom: solid 2px red;
+  
 }
 .nav-logo{
   margin-left: 5px;
@@ -50,16 +54,34 @@
 }
 
 .nav-item > .active  {
-  padding-bottom: 12px;
+  padding-bottom: 0.48em;
   border-bottom: 3px solid red;
 }
 
-Button > .active  {
+/* Button > .active  {
   padding-bottom: 12px;
   
-}
+} */
 .nav-item{
   list-style-type: none;
   display: inline-block;
   padding: 13px;
+}
+.navbar-mob-bg {
+  background-color: #242424;
+  border-bottom: solid 2px red;
+}
+.navbar__mob{
+  z-index: 1;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+}
+.nav__mob {
+  margin: 0 auto;
+  text-align: center;
 }
