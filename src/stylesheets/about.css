@@ -30,6 +30,21 @@
     justify-content: center;
     align-items: center;
 }
+.container-about-intro {
+    width: 40em;
+}
+.intro-description {
+    margin-top: 2em;
+}
+.container-about-info {
+    height: 15em;
+    width: 67em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
 .first-name {
     color: black;
 
@@ -37,3 +52,27 @@
 .last-name {
     color: red;
 }
+.container-pentagon {
+    text-align: center;
+    width: 16em;
+    height: fit-content;
+    
+}
+.icon {
+    font-size: 4em;
+}
+.pentagon{
+    margin: 0 auto;
+    width: 3em;
+    height: 3em;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20% 90%/ 78% 54%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+
+  }
+ 
+
