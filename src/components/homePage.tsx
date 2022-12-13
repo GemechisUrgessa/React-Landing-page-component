@@ -3,6 +3,7 @@ import '../stylesheets/homePage.css';
 import Particle from "./Particles";
 import Header from "./header";
 import { Typewriter } from "react-simple-typewriter";
+import { BsArrowBarDown, BsArrowDown } from 'react-icons/bs';
 
 const HomePage = (): JSX.Element => {
 
@@ -23,7 +24,7 @@ const HomePage = (): JSX.Element => {
                     />
                 </div>
                 <div>
-                    <button className="btn btn-home"><div className="btn-drop">.</div>ABOUT</button>
+                    <button className="btn btn-home"><div className="btn-drop"><BsArrowDown /></div>ABOUT</button>
                 </div>
             </div>
 

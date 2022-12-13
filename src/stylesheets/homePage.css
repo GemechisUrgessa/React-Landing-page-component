@@ -23,14 +23,12 @@
     opacity: .8;
 }
 .btn-drop {
+font-weight: bold !important;
     display: inline-block;
     position:relative ;
-
   top:-10px;
-  /* border: solid 1px; */
   height:15%;
   margin:.1em;
-  /* background-color:purple; */
   animation: drop 3s ease-in-out forwards;
   animation-iteration-count:infinite;
 }
