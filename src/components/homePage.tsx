@@ -13,17 +13,19 @@ const HomePage = (): JSX.Element => {
                 <div className='home-container'>
                     <h1>Hello, I'm <span className="name">Gemechis Urgessa.</span></h1>
                     <Typewriter
-                        words={['FULL_STACK DEVELOPER', 'MOBILE APPLICATION DEVELOPER']}
-                        loop={5}
+                        words={['FULL-STACK DEVELOPER', 'MOBILE APPLICATION DEVELOPER', 'SOFTWARE ENGINEER']}
+                        loop={3}
                         cursor
                         cursorStyle='_'
                         typeSpeed={70}
-                        deleteSpeed={50}
+                        deleteSpeed={70}
                         delaySpeed={1000}
-                    // onLoopDone={handleDone}
-                    // onType={handleType}
                     />
-                </div></div>
+                </div>
+                <div>
+                    <button className="btn btn-home"><div className="btn-drop">.</div>ABOUT</button>
+                </div>
+            </div>
 
         </>
     )
