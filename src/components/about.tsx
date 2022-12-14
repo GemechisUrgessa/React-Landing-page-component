@@ -3,6 +3,11 @@ import { SiFastapi } from 'react-icons/si';
 import { DiResponsive } from 'react-icons/di';
 import { GiDeskLamp } from 'react-icons/gi';
 import { IoIosRocket } from 'react-icons/io';
+import ProgressBar from './progressBar';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import ProgressBar from 'react-bootstrap/ProgressBar';
+
+
 const About = () => {
     return (
         <section className="about-page" id="about">
@@ -57,7 +62,14 @@ const About = () => {
                         application development, communication, collaboration, and technical documentation..</p>
                 </div>
                 <div className="container-about-process">
-
+                    <ProgressBar color="secondary" value={80} label={"JavaScript"} />
+                    <ProgressBar color="secondary" value={80} label={"JavaScript"} />
+                    <ProgressBar color="secondary" value={80} label={"JavaScript"} />
+                    <ProgressBar color="secondary" value={80} label={"JavaScript"} />
+                    <ProgressBar color="secondary" value={80} label={"JavaScript"} />
+                    <ProgressBar color="secondary" value={80} label={"JavaScript"} />
+                    <ProgressBar color="secondary" value={80} label={"JavaScript"} />
+                    <ProgressBar color="secondary" value={80} label={"JavaScript"} />
                 </div>
             </div>
         </section>
