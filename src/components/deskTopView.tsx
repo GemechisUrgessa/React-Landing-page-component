@@ -75,10 +75,10 @@ const DesktopView = (): JSX.Element => {
                     </Link></li>
                     <li className="nav-item"><Link className="nav-link"
                         activeClass="active"
-                        to="contact"
+                        to="portfolio"
                         spy={true}
                         smooth={true}
-                        offset={-50}
+                        offset={-48}
                         duration={200}
                     >
                         {`Portfolio`.toUpperCase()}
@@ -88,7 +88,7 @@ const DesktopView = (): JSX.Element => {
                         to="contact"
                         spy={true}
                         smooth={true}
-                        offset={-50}
+                        offset={-48}
                         duration={200}
                     >
                         {`Contact`.toUpperCase()}

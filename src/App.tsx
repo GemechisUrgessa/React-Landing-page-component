@@ -4,6 +4,8 @@ import Header from './components/header'
 import HomePage from './components/homePage'
 import About from './components/about'
 import Particle from './components/Particles'
+import Services from './components/services'
+import Portfolio from './components/portfolio'
 
 function App() {
 
@@ -15,6 +17,8 @@ function App() {
       <main>
         <HomePage />
         <About />
+        <Services />
+        <Portfolio />
       </main>
     </>
   )
